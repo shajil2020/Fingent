@@ -84,7 +84,7 @@
 
                       </td>
                       <td>
-      <input type="text" class="form-control" name="qty[]" id="qty_<?php echo $i;?>" style="width:40%" value="<?php echo  $item['product_qty'];?>" onchange="get_sub_total(this.value,<?php echo $i;?>)">
+      <input type="number" min="1" class="form-control" name="qty[]" id="qty_<?php echo $i;?>" style="width:40%" value="<?php echo  $item['product_qty'];?>" onchange="get_sub_total(this.value,<?php echo $i;?>)">
 
 
                       </td>
