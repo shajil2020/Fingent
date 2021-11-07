@@ -12,10 +12,11 @@ a). Line Total against each item   b). Subtotal without tax   c). Subtotal with 
 ###### ○ A "Generate Invoice" button should be provided and upon clicking it, all the information should be neatly displayed in a printable format.
 
 ## Configuration 
-
-###### 1. Extract the folder and copy the fingent_cart folder into "  C:\xampp\htdocs "
-###### 2. Create a new database in mysql with name "shopping" 
-###### 3. Open the database folder and import the file shopping.sql into newly created database.
+###### 1. Open  XAMPP control panel and start the Apache and MySQL.
+###### 2. Extract the folder and copy the fingent_cart folder into "  C:\xampp\htdocs ".
+###### 3. Create a new database in MySQL with name "shopping". 
+###### 4. Open the database folder and import the file shopping.sql into newly created database.
+###### 5. To run the application copy the url and paste on your browser ". 
 
     http://localhost/fingent_cart/   
 
