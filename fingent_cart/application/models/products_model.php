@@ -1,6 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Products_model extends CI_Model {
+class Products_model extends CI_Model
+{
 
 	public function __construct()
 	{
@@ -12,9 +13,9 @@ class Products_model extends CI_Model {
 		$query = $this->db->get('products');
 		return $query->result_array();
 	}
-	public function insert_products($products_list=null)
+	public function insert_products($products_list = null)
 	{
-		$this->db->insert('cart_products',$products_list);
+		$this->db->insert('cart_products', $products_list);
 	}
 	public function get_cart_products()
 	{
@@ -23,8 +24,8 @@ class Products_model extends CI_Model {
 	}
 	public function get_product_count($prodcut_id)
 	{
-       $this->db->where('product_id',$prodcut_id);
-       $query = $this->db->get('cart_products');
-       return $query->result_array();
+		$this->db->where('product_id', $prodcut_id);
+		$query = $this->db->get('cart_products');
+		return $query->result_array();
 	}
 }
